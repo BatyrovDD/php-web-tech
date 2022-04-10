@@ -1,19 +1,28 @@
 <?
 session_start();
 ?>
+<html>
 <title> Авторизация </title>
-<body>
+<style>
+   body {
+    background-image: url(https://static.tildacdn.com/tild6665-3339-4533-b430-353964313532/_.jpg); /* Путь к фоновому изображению */
+    }
+  </style>
+  <h2>Вариант 5 - Недвижимость</h2>
+<body style="text-align: center" aling="center">
+    
+<div aling="center">
 <form method="post" action="<?php print $PHP_SELF ?>">
 <?
 //include("check_log.php");
 echo "Введите логин:<br><input type='text' name='login' required>";
 echo "<br>Введите пароль:<br><input type='password' name='password' required>";
 ?>
-<br><input type='submit' name='sign' value='Вход'>
+<br><br><input type='submit' name='sign' value='Вход'>
 </form>
-<br> Админ - admin admin
-<br> Оператор - oper oper
-</body>
+   <h2>Администратор: <br>логин - den-admin; <br>пароль - den-admin
+<br><br> Оператор: <br>логин - ghost; <br>пароль - ghost
+</h2>
 <?
 if (isset($_POST["sign"])) {
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
@@ -32,3 +41,6 @@ if (mysqli_affected_rows($conn)>0) {
 } else { echo "<br>Неверный логин/пароль"; }
 }
 ?>
+ </div>
+ </body>
+ </html>
