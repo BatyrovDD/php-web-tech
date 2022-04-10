@@ -1,5 +1,5 @@
 <html>
-<head> <title>PHP Веб-тех. Лаб. работа 1 </title> </head>
+<head> <title>PHP ИП. Лаб. работа 1 </title> </head>
   <a href="http://a0657844.xsph.ru/">Назад</a>
 <div align="center">
     <h1>PHP Веб-тех. Батыров Денис Дамирович<p> Лаб. работа 1</h1><p>
